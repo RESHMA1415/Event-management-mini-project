@@ -1,0 +1,166 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}
+Events
+{% endblock %}
+
+{% block content %}
+<h2 class="text-center">Events... We Create, U Celebrate.....!!!*****!!!!!!</h2>
+
+<div class="container">
+    {% for i in eve %}
+    <div class="row">
+        <div class="col-md-4">
+            <div class="card text-center" style="margin: 20px;">
+                <img src="{{i.img.url}}" class="card-img-top" alt="Event Image 1" style="height: 250px; object-fit: cover;">
+                <div class="card-body">
+                    <h5 class="card-title">{{i.name}}</h5>
+                    <p class="card-text">{{i.dec}}</p>
+                    
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+
+
+
+        {% comment %} <div class="col-md-4">
+            <div class="card text-center" style="margin: 20px;">
+                <img src="{{i.img.url}}}" class="card-img-top" alt="Event Image 2" style="height: 250px; object-fit: cover;">
+                <div class="card-body">
+                    <h5 class="card-title">{{i.name}}</h5>
+                    <p class="card-text">{{i.dec}}</p>
+                    
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card text-center" style="margin: 20px;">
+                <img src="{{i.img.url}}" class="card-img-top" alt="Event Image 3" style="height: 250px; object-fit: cover;">
+                <div class="card-body">
+                    <h5 class="card-title">{{i.name}}</h5>
+                    <p class="card-text">{{i.dec}}</p>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-4">
+            <div class="card text-center" style="margin: 20px;">
+                <img src="{{i.img.url}}" class="card-img-top" alt="Event Image 4" style="height: 250px; object-fit: cover;">
+                <div class="card-body">
+                    <h5 class="card-title">{{i.name}}</h5>
+                    <p class="card-text">{{i.dec}}</p>
+                
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card text-center" style="margin: 20px;">
+                <img src="{{i.img.url}}" class="card-img-top" alt="Event Image 5" style="height: 250px; object-fit: cover;">
+                <div class="card-body">
+                    <h5 class="card-title">{{i.name}}</h5>
+                    <p class="card-text">{{i.dec}}</p>
+                    
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card text-center" style="margin: 20px;">
+                <img src="{i.img.url}" class="card-img-top" alt="Event Image 6" style="height: 250px; object-fit: cover;">
+                <div class="card-body">
+                    <h5 class="card-title">{{i.name}}</h5>
+                    <p class="card-text">{{i.dec}}</p>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-4">
+            <div class="card text-center" style="margin: 20px;">
+                <img src="{{i.img.url}}" class="card-img-top" alt="Event Image 7" style="height: 250px; object-fit: cover;">
+                <div class="card-body">
+                    <h5 class="card-title">{{i.name}}</h5>
+                    <p class="card-text">{{i.dec}}</p>
+                
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card text-center" style="margin: 20px;">
+                <img src="{{i.img.url}}" class="card-img-top" alt="Event Image 8" style="height: 250px; object-fit: cover;">
+                <div class="card-body">
+                    <h5 class="card-title">{{i.name}}</h5>
+                    <p class="card-text">{{i.dec}}</p>
+                
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card text-center" style="margin: 20px;">
+                <img src="{i.img.url}" class="card-img-top" alt="Event Image 9" style="height: 250px; object-fit: cover;">
+                <div class="card-body">
+                    <h5 class="card-title">{{i.name}}</h5>
+                    <p class="card-text">{{i.dec}}</p>
+                
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-4">
+            <div class="card text-center" style="margin: 20px;">
+                <img src="{i.img.url}" class="card-img-top" alt="Event Image 7" style="height: 250px; object-fit: cover;">
+                <div class="card-body">
+                    <h5 class="card-title">{{i.name}}</h5>
+                    <p class="card-text">{{i.dec}}</p>
+            
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card text-center" style="margin: 20px;">
+                <img src="{{i.img.url}}" class="card-img-top" alt="Event Image 8" style="height: 250px; object-fit: cover;">
+                <div class="card-body">
+                    <h5 class="card-title">{{i.name}}</h5>
+                    <p class="card-text">{{i.dec}}</p>
+                    
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card text-center" style="margin: 20px;">
+                <img src="{{i.img.url}}" class="card-img-top" alt="Event Image 9" style="height: 250px; object-fit: cover;">
+                <div class="card-body">
+                    <h5 class="card-title">{{i.name}}</h5>
+                    <p class="card-text">{{i.dec}}</p>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</div> {% endcomment %}
+
+
+
+{% comment %} <footer class="text-center" style="margin-bottom: 50px;">
+    <p>&copy; 2024 Event Management System. All rights reserved.</p>
+    <p>Developed by Your Company Name | <a href="mailto:info@ourcompany.com">info@ourcompany.com</a></p>
+</footer> {% endcomment %}
+{% endblock %}

@@ -1,0 +1,85 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Contact Us - Melodia Events
+{% endblock %}
+
+{% block content %}
+<div class="container mt-5">
+    <!-- Contact Section -->
+    <div class="row">
+        <div class="col-md-12 text-center">
+            <h1 class="display-4">Contact Us</h1>
+            <p class="lead">Let's bring your dream events to life with Melodia Events!</p>
+            <hr class="my-4">
+        </div>
+        <div class="col-md-6">
+            <h3>Get in Touch</h3>
+            <p>
+                Melody Events is here to make your celebrations unforgettable. Whether you’re planning a wedding, corporate event, or private party, we’re ready to help.
+            </p>
+            <p>
+                <strong>Phone:</strong> 988765432, 985345667<br>
+                <strong>WhatsApp:</strong> 988765432, 876543234<br>
+                <strong>Email:</strong> info@melodiaevents.com
+            </p>
+        </div>
+        <div class="col-md-6">
+            <!-- Contact Form -->
+            <form>
+                <div class="form-group">
+                    <label for="name">Your Name</label>
+                    <input type="text" class="form-control" id="name" placeholder="Enter your name">
+                </div>
+                <div class="form-group">
+                    <label for="email">Your Email</label>
+                    <input type="email" class="form-control" id="email" placeholder="Enter your email">
+                </div>
+                <div class="form-group">
+                    <label for="message">Your Message</label>
+                    <textarea class="form-control" id="message" rows="4" placeholder="Write your message"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Send Message</button>
+            </form>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block footer %}
+<!-- Footer Section -->
+<footer class="bg-dark text-white py-4">
+    <div class="container text-center">
+        <div class="row">
+            <div class="col-md-4">
+                <h5>About Melodia Events</h5>
+                <p>
+                    Creating unforgettable events in Kerala for over a decade. We turn your vision into reality with creativity and flawless execution.
+                </p>
+            </div>
+            <div class="col-md-4">
+                <h5>Quick Links</h5>
+                <ul class="list-unstyled">
+                    <li><a href="{% url 'home' %}" class="text-white">Home</a></li>
+                    <li><a href="{% url 'services' %}" class="text-white">Services</a></li>
+                    <li><a href="{% url 'about' %}" class="text-white">About Us</a></li>
+                    <li><a href="{% url 'contact' %}" class="text-white">Contact</a></li>
+                </ul>
+            </div>
+            <div class="col-md-4">
+                <h5>Follow Us</h5>
+                <ul class="list-unstyled">
+                    <li><a href="#" class="text-white">Facebook</a></li>
+                    <li><a href="#" class="text-white">Instagram</a></li>
+                    <li><a href="#" class="text-white">LinkedIn</a></li>
+                </ul>
+            </div>
+        </div>
+        <hr>
+
+        
+    </div>
+    <footer>
+    <p class="mb-0">&copy; 2024 Melody Events. All Rights Reserved.</p>
+</footer>
+{% endblock %}

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <!-- Add any CSS framework or custom styles here -->
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="{% url 'adminhome' %}">Home</a></li>
+                <li><a href="{% url 'view_users' %}">Manage Users</a></li>
+                <li><a href="{% url 'manage_events' %}">Manage Events</a></li>
+                <li><a href="{% url 'view_bookings' %}">Manage Bookings</a></li>
+                <li><a href="{% url 'manage_employees' %}">Manage Employees</a></li>
+                <li><a href="{% url 'logouts' %}">Logout</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="admin-dashboard">
+            <h1>Welcome, Admin</h1>
+            <p>Use the navigation links above to manage the system.</p>
+            <div class="admin-actions">
+                <div class="action-item">
+                    <h2>Manage Database</h2>
+                    <p><a href="{% url 'view_users' %}">View Users</a></p>
+                    <p><a href="{% url 'manage_events' %}">View Events</a></p>
+                    <p><a href="{% url 'view_bookings' %}">View Bookings</a></p>
+                </div>
+                <div class="action-item">
+                    <h2>User Management</h2>
+                    <p><a href="{% url 'create_user' %}">Create New User</a></p>
+                    <p><a href="{% url 'view_users' %}">View/Edit Users</a></p>
+                </div>
+                <div class="action-item">
+                    <h2>Event Management</h2>
+                    <p><a href="{% url 'create_event' %}">Create New Event</a></p>
+                    <p><a href="{% url 'manage_events' %}">View/Edit Events</a></p>
+                </div>
+                <div class="action-item">
+                    <h2>Booking Management</h2>
+                    <p><a href="{% url 'view_bookings' %}">View All Bookings</a></p>
+                    <p><a href="{% url 'approve_bookings' %}">Approve/Disapprove Bookings</a></p>
+                </div>
+                <div class="action-item">
+                    <h2>Employee Management</h2>
+                    <p><a href="{% url 'manage_employees' %}">View Employees</a></p>
+                    <p><a href="{% url 'create_employee' %}">Add New Employee</a></p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Event Management System</p>
+    </footer>
+</body>
+</html>
